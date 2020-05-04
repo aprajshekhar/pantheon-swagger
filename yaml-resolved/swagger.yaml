@@ -1,0 +1,408 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://pantheon.corp.qa.redhat.com
+paths:
+  /content/products/{productName}:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: productName
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: test_product_test33.2.json
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json;charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /system/sling/info.sessionInfo.json:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json;charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /content/products/Test_RHEL_8:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body'
+            examples:
+              "0":
+                value: '{"id":"5e5128bf-8868-462a-b49a-a5f3d4f99d58","status": "received","sender":"curl","message":"testing
+                  for spec"}'
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html;charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /api/status:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_1'
+            examples:
+              "0":
+                value: '{"id":"5e5128bf-8868-462a-b49a-a5f3d4f99d58","status": "received","sender":"curl","message":"testing
+                  for spec"}'
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /content/products/Test_RHEL_8/versions/2:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/body_2'
+            examples:
+              "0":
+                value: '{"id":"5e5128bf-8868-462a-b49a-a5f3d4f99d58","status": "received","sender":"curl","message":"testing
+                  for spec"}'
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html;charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /pantheon/internal/node.json:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: depth
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: "4"
+      - name: uuid
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: eb23abcc-d108-4ac7-974d-347113f07b06
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: '{"jcr:created":1586431492215,"jcr:lastModifiedBy":"sync-service","en_US":{"1":{"metadata":{"pant:dateUploaded":1586431492217,"productVersion":"bfdc71c3-de1c-4070-9f18-4f635f0bea30","pant:datePublished":1586431548106,"jcr:description":"con_running-containers","jcr:lastModified":1586431492217,"urlFragment":"/test1","jcr:title":"Running
+                    containers","jcr:primaryType":"nt:unstructured","documentUsecase":"Administer"},"jcr:created":1586431492215,"jcr:lastModifiedBy":"sync-service","ackStatus":{"sling:resourceType":"pantheon/acknowledgment","jcr:primaryType":"pant:acknowledgment","jcr:lastModifiedBy":"sync-service","jcr:lastModified":1588017871832},"jcr:createdBy":"sync-service","jcr:lastModified":1586431492216,"sling:resourceType":"pantheon/moduleVersion","jcr:uuid":"6503599c-56f1-4d17-9273-e3f79eba7782","jcr:primaryType":"pant:moduleVersion","content":{"asciidoc":{"jcr:primaryType":"nt:file","jcr:created":1586431492216,"jcr:createdBy":"sync-service"},"jcr:primaryType":"nt:unstructured","cachedHtml":{"jcr:primaryType":"nt:unstructured","pant:hash":"03afce49"}},"status":{"jcr:primaryType":"nt:unstructured","pant:sender":"nmath","pant:message":"module
+                    has 2 versions","pant:status":"null"}},"2":{"metadata":{"pant:dateUploaded":1587471605596,"productVersion":"bfdc71c3-de1c-4070-9f18-4f635f0bea30","jcr:description":"con_running-containers","jcr:lastModified":1587471605596,"urlFragment":"/test1","jcr:title":"Running
+                    containers","jcr:primaryType":"nt:unstructured","documentUsecase":"Administer","pant:moduleType":"CONCEPT"},"jcr:created":1586431924323,"jcr:lastModifiedBy":"sync-service","ackStatus":{"sling:resourceType":"pantheon/acknowledgment","jcr:primaryType":"pant:acknowledgment","jcr:lastModifiedBy":"sync-service","jcr:lastModified":1587471605596},"jcr:createdBy":"sync-service","jcr:lastModified":1586431924323,"sling:resourceType":"pantheon/moduleVersion","jcr:uuid":"c3034152-0cb4-4143-9ab5-1646e222dec8","jcr:primaryType":"pant:moduleVersion","content":{"asciidoc":{"jcr:primaryType":"nt:file","jcr:created":1586431924325,"jcr:createdBy":"sync-service"},"jcr:primaryType":"nt:unstructured","cachedHtml":{"jcr:primaryType":"nt:unstructured","pant:hash":"03afce49"}}},"jcr:created":1586431492215,"jcr:lastModifiedBy":"sync-service","jcr:createdBy":"sync-service","draft":"c3034152-0cb4-4143-9ab5-1646e222dec8","jcr:lastModified":1586431492215,"sling:resourceType":"pantheon/moduleLocale","jcr:uuid":"13e26113-64da-4180-ad50-97c1ed1b29d8","jcr:primaryType":"pant:moduleLocale","released":"6503599c-56f1-4d17-9273-e3f79eba7782"},"jcr:createdBy":"sync-service","jcr:lastModified":1586431492215,"sling:resourceType":"pantheon/module","jcr:uuid":"eb23abcc-d108-4ac7-974d-347113f07b06","jcr:primaryType":"pant:module"}'
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /content/products.query.json:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: orderby
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: name
+      - name: nodeType
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: pant:product
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+  /content/repositories/llu.10.json:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://pantheon.corp.qa.redhat.com
+    servers:
+    - url: https://pantheon.corp.qa.redhat.com
+components:
+  schemas:
+    inline_response_200_en_US:
+      type: object
+      properties:
+        "1":
+          $ref: '#/components/schemas/inline_response_200_en_US_1'
+        "2":
+          $ref: '#/components/schemas/inline_response_200_en_US_2'
+        jcr:created:
+          type: number
+        jcr:lastModifiedBy:
+          type: string
+        jcr:createdBy:
+          type: string
+        draft:
+          type: string
+        jcr:lastModified:
+          type: number
+        sling:resourceType:
+          type: string
+        jcr:uuid:
+          type: string
+        jcr:primaryType:
+          type: string
+        released:
+          type: string
+    inline_response_200_en_US_2:
+      type: object
+      properties:
+        metadata:
+          $ref: '#/components/schemas/inline_response_200_en_US_2_metadata'
+        jcr:created:
+          type: number
+        jcr:lastModifiedBy:
+          type: string
+        ackStatus:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_ackStatus'
+        jcr:createdBy:
+          type: string
+        jcr:lastModified:
+          type: number
+        sling:resourceType:
+          type: string
+        jcr:uuid:
+          type: string
+        jcr:primaryType:
+          type: string
+        content:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_content'
+    inline_response_200_en_US_1:
+      type: object
+      properties:
+        metadata:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_metadata'
+        jcr:created:
+          type: number
+        jcr:lastModifiedBy:
+          type: string
+        ackStatus:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_ackStatus'
+        jcr:createdBy:
+          type: string
+        jcr:lastModified:
+          type: number
+        sling:resourceType:
+          type: string
+        jcr:uuid:
+          type: string
+        jcr:primaryType:
+          type: string
+        content:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_content'
+        status:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_status'
+    inline_response_200_en_US_2_metadata:
+      type: object
+      properties:
+        pant:dateUploaded:
+          type: number
+        productVersion:
+          type: string
+        jcr:description:
+          type: string
+        jcr:lastModified:
+          type: number
+        urlFragment:
+          type: string
+        jcr:title:
+          type: string
+        jcr:primaryType:
+          type: string
+        documentUsecase:
+          type: string
+        pant:moduleType:
+          type: string
+    body:
+      type: object
+      properties:
+        sender:
+          type: string
+        id:
+          type: string
+        message:
+          type: string
+        status:
+          type: string
+    inline_response_200_en_US_1_content_asciidoc:
+      type: object
+      properties:
+        jcr:created:
+          type: number
+        jcr:createdBy:
+          type: string
+        jcr:primaryType:
+          type: string
+    inline_response_200_en_US_1_content_cachedHtml:
+      type: object
+      properties:
+        pant:hash:
+          type: string
+        jcr:primaryType:
+          type: string
+    inline_response_200_en_US_1_ackStatus:
+      type: object
+      properties:
+        jcr:lastModifiedBy:
+          type: string
+        jcr:lastModified:
+          type: number
+        sling:resourceType:
+          type: string
+        jcr:primaryType:
+          type: string
+    body_1:
+      type: object
+      properties:
+        sender:
+          type: string
+        id:
+          type: string
+        message:
+          type: string
+        status:
+          type: string
+    body_2:
+      type: object
+      properties:
+        sender:
+          type: string
+        id:
+          type: string
+        message:
+          type: string
+        status:
+          type: string
+    inline_response_200_en_US_1_status:
+      type: object
+      properties:
+        pant:sender:
+          type: string
+        pant:message:
+          type: string
+        jcr:primaryType:
+          type: string
+        pant:status:
+          type: string
+    inline_response_200_en_US_1_metadata:
+      type: object
+      properties:
+        pant:dateUploaded:
+          type: number
+        productVersion:
+          type: string
+        pant:datePublished:
+          type: number
+        jcr:description:
+          type: string
+        jcr:lastModified:
+          type: number
+        urlFragment:
+          type: string
+        jcr:title:
+          type: string
+        jcr:primaryType:
+          type: string
+        documentUsecase:
+          type: string
+    inline_response_200_en_US_1_content:
+      type: object
+      properties:
+        asciidoc:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_content_asciidoc'
+        cachedHtml:
+          $ref: '#/components/schemas/inline_response_200_en_US_1_content_cachedHtml'
+        jcr:primaryType:
+          type: string
+    inline_response_200:
+      type: object
+      properties:
+        jcr:created:
+          type: number
+        jcr:lastModifiedBy:
+          type: string
+        en_US:
+          $ref: '#/components/schemas/inline_response_200_en_US'
+        jcr:createdBy:
+          type: string
+        jcr:lastModified:
+          type: number
+        sling:resourceType:
+          type: string
+        jcr:uuid:
+          type: string
+        jcr:primaryType:
+          type: string
+  securitySchemes:
+    basic:
+      type: http
+      scheme: basic
